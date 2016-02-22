@@ -323,7 +323,7 @@ header .header-content .header-content-inner p {
 
 /* CALENDAR STYLES */
 #calendar{
-  background-color: #ccc; 
+  background-color: #ccc;
 }
 
 /* BUTTON STYLES */
@@ -573,7 +573,9 @@ body {
 }
 
 /* Smaller screens (tablets, large phones) */
-@media(max-width: 768px) {
-
+@media(max-width: 562px) {
+  portfolio-box {
+    opacity: 1;
+  }
 
 }

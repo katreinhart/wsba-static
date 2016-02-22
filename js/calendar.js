@@ -1,62 +1,38 @@
 $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js',function(){
-  
-  var date = new Date();
-  var d = date.getDate();
-  var m = date.getMonth();
-  var y = date.getFullYear();
-  
-  $('#calendar').fullCalendar({
-    header: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay'
-    },
-    editable: true,
-    events: [
-      {
-        title: 'All Day Event',
-        start: new Date(y, m, 1)
-      },
-      {
-        title: 'Long Event',
-        start: new Date(y, m, d-5),
-        end: new Date(y, m, d-2)
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d-3, 16, 0),
-        allDay: false
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d+4, 16, 0),
-        allDay: false
-      },
-      {
-        title: 'Meeting',
-        start: new Date(y, m, d, 10, 30),
-        allDay: false
-      },
-      {
-        title: 'Lunch',
-        start: new Date(y, m, d, 12, 0),
-        end: new Date(y, m, d, 14, 0),
-        allDay: false
-      },
-      {
-        title: 'Birthday Party',
-        start: new Date(y, m, d+1, 19, 0),
-        end: new Date(y, m, d+1, 22, 30),
-        allDay: false
-      },
-      {
-        title: 'Click for Google',
-        start: new Date(y, m, 28),
-        end: new Date(y, m, 29),
-        url: 'http://google.com/'
-      }
-    ]
+  //
+  // var date = new Date();
+  // var d = date.getDate();
+  // var m = date.getMonth();
+  // var y = date.getFullYear();
+
+  // API KEY: AIzaSyC-QKi9HTtEN8RwouBUA69nBnkeOqQAAHQ
+
+  $(document).ready(function(){
+    $('#calendar').fullCalendar({
+      googleCalendarApiKey: 'AIzaSyC-QKi9HTtEN8RwouBUA69nBnkeOqQAAHQ',
+      events: [{
+          title: 'Womens Road Race Clinic',
+          start: '2016-02-20',
+          class: 'road-event'
+      },{
+          title: 'Sequim #1',
+          start: '2016-03-12',
+          class: 'road-event'
+      },{
+          title: 'Icebreaker TT',
+          start: '2016-03-05',
+          class: 'road-event'
+      },{
+          title: 'Mason Lake #1',
+          start: '2016-03-06',
+          class: 'road-event'
+      },{
+          title: 'Dash Point',
+          start: '2016-02-21',
+          class: 'mtb-event'
+      },{
+          googleCalendarId: '2fh1nujh8k4b49m0j2mc85lbog@group.calendar.google.com'
+      }]
+    });
   });
-})
+});

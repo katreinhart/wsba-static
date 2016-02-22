@@ -24,6 +24,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/calendar.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +36,9 @@
 </head>
 
 <body id="page-top">
-
+<!--
+    Navigation Bar
+-->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,10 +62,13 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#results">Recent Events</a>
+                        <a class="page-scroll" href="#teams">Teams</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#info">Information</a>
+                        <a class="page-scroll" href="#events">Events</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#programs">Programs</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -73,7 +79,9 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+<!--
+    Main Header
+-->
     <header id="main-header">
         <div class="header-content">
             <div class="header-content-inner">
@@ -86,19 +94,27 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="calendar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">WSBA Racing Calendar</h2>
-                    <hr class="light">
-                    <p class="text-faded">Find an upcoming event, get information including categories and fields, registration, parking, and event times.</p>
-                    <a href="/calendar.html" class="btn btn-default btn-xl">Get Started!</a>
-                </div>
+<!--
+    Calendar
+-->
+<section class="bg-primary" id="cal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">WSBA Racing Calendar</h2>
+                <hr class="light">
+                <p class="text-faded">Find an upcoming event, get information including categories and fields, registration, parking, and event times.</p>
+                <a href="#" class="btn btn-default btn-xl" data-toggle="calendar">Get Started!</a>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="container">
+    <hr>
+</section>
 
+<!--
+    About Section (different styles of bike racing)
+-->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -142,13 +158,48 @@
         </div>
     </section>
 
+  <!-- PROGRAMS SECTION -->
+    <section id="programs" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h2>WSBA Programs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p class="lead">
+              WSBA offers programs for racers of all levels.
+            </p>
+
+          </div><!-- column -->
+        </div><!-- row -->
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+
+            <ul class="program-list list-inline">
+              <li><a href="#" class="btn btn-default">Junior Racers</a></li>
+              <li><a href="#" class="btn btn-default">Beginner Women</a></li>
+              <li><a href="#" class="btn btn-default">Track Program</a></li>
+              <li><a href="#" class="btn btn-default">Elite Development</a></li>
+              <li><a href="#" class="btn btn-default">Grant Program</a></li>
+            </ul>
+
+          </div><!-- column -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </section>
+
+<!--
+    Events Section (Call out specific events on calendar)
+-->
     <section class="no-padding" id="results">
         <div class="container-heading">
             <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h3>Events</h3>
                 <p class="lead">Learn about some of the amazing competitive cycling events in Washington State! See course maps, photos of past events, and results from previous years.</p>
-            </div></div>    
+            </div></div>
         </div>
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -246,6 +297,72 @@
         </div>
     </section>
 
+<!-- TEAMS SECTION  -->
+    <section id="teams">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h3>Local Racing Teams</h3>
+            <p>
+              Find a team to ride with - whether you're novice or former pro, junior or masters.
+            </p>
+            <table class="table">
+              <tr>
+                <th class="col-sm-2">
+                  Team Name
+                </th>
+                <th class="col-sm-8">
+                  Disciplines
+                </th>
+                <th class="col-sm-2">
+                  Contact
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  First Team
+                </td>
+                <td>
+                  Masters, road and cyclocross, women
+                </td>
+                <td>
+                  <a href="#">Person Person</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Second Team
+                </td>
+                <td>
+                  Women, Juniors, primarily track, some road, mtb, cross
+                </td>
+                <td>
+                  <a href="#">Another Person</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Third Team
+                </td>
+                <td>
+                  Highly competitive road cyclists that dabble in other disciplines
+                </td>
+                <td>
+                  <a href="#">Anony Mouse</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!--
+    Call to Action (Learn More)
+-->
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
@@ -255,6 +372,9 @@
         </div>
     </aside>
 
+<!--
+    Contact
+-->
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -263,17 +383,27 @@
                     <hr class="primary">
                     <p>Ready to start your competitive cycling journey? That's great!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">contact@wsbaracing.org</a></p>
                 </div>
             </div>
         </div>
     </section>
+
+<!--
+    Footer
+-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <small>Footer Stuff</small>
+                </div><!-- end col-sm-6-->
+
+            </div><!-- end row -->
+        </div><!-- end container-->
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -288,6 +418,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script src="js/calendar.js"></script>
 
 </body>
 

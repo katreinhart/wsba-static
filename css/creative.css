@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* GENERAL */
+
 html,
 body {
     width: 100%;
@@ -29,6 +31,18 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+.bg-primary a {
+  color: #51d6ff;
+}
+
+#moreinfo {
+
+}
+
+#moreinfo .btn-primary {
+  background-color: #666;
 }
 
 a:hover,
@@ -76,6 +90,8 @@ aside {
     padding: 0;
 }
 
+
+/* NAVBAR STYLES */
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -121,70 +137,7 @@ aside {
     background-color: transparent;
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
-    }
-
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
-    }
-
-    .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: #fff;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: #a06b9a;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #51d6ff;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #222;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: #a06b9a;
-    }
-}
-
-header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    text-align: center;
-    color: #fff;
-    background-image: url(../img/header.jpg);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+/* HEADER STYLES */
 
 .container-heading {
     position: relative;
@@ -199,7 +152,17 @@ header {
 }
 
 header {
-    background-color: #000;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 header .header-content {
@@ -227,33 +190,7 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
-@media(min-width:768px) {
-    header {
-        min-height: 100%;
-    }
-
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    header .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
-    }
-
-    header .header-content .header-content-inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
-    }
-}
+/* SECTION STYLES */
 
 .section-heading {
     margin-top: 0;
@@ -264,15 +201,13 @@ header .header-content .header-content-inner p {
     max-width: 400px;
 }
 
-@media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
-    }
-}
+
 
 .service-box p {
     margin-bottom: 0;
 }
+
+/* PORTFOLIO */
 
 .portfolio-box {
     display: block;
@@ -290,7 +225,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(40,195,94,.8);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -324,16 +259,6 @@ header .header-content .header-content-inner p {
     opacity: 1;
 }
 
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
-}
-
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
@@ -346,6 +271,62 @@ header .header-content .header-content-inner p {
     padding-right: 0;
     padding-left: 0;
 }
+
+/* Team Section */
+#teams {
+  background-color: #a06b9a;
+  color: #fff;
+}
+
+#teams h3 {
+  text-align: center;
+  padding: 0 0 20px;
+  margin: 0;
+  color: #fff;
+}
+
+#teams p {
+  color: #ccc;
+}
+
+#teams a {
+  color: #51d6ff;
+}
+
+/* PROGRAMS SECTION */
+#programs h2 {
+  padding: 0 0 20px;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+#programs p {
+  font-size: 1.1em;
+}
+
+#programs ul {
+  list-style: none;
+}
+
+#programs ul li {
+  padding: 5px;
+}
+
+#programs a:hover,a:active {
+  background-color: #ccc;
+}
+.program-list {
+  margin: 0;
+  padding: 10px;
+}
+
+/* CALENDAR STYLES */
+#calendar{
+  background-color: #ccc; 
+}
+
+/* BUTTON STYLES */
 
 .btn-default {
     border-color: #fff;
@@ -489,4 +470,110 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+/*   MEDIA QUERIES   */
+
+/* Desktop specific styles */
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,.3);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: #fff;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #a06b9a;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #51d6ff;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #a06b9a;
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* XL Screens */
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+/* Smaller screens (tablets, large phones) */
+@media(max-width: 768px) {
+
+
 }

@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+/* COLORS
+ RED: #9b1700
+ BLUE: #1917a3
+ GREEN: #469629
+*/
+
+
+
 /* GENERAL */
 
 html,
@@ -18,7 +27,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #a06b9a;
+    border-color: #9b1700;
     border-width: 3px;
 }
 
@@ -27,14 +36,14 @@ hr.light {
 }
 
 a {
-    color: #a06b9a;
+    color: #9b1700;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
 .bg-primary a {
-  color: #51d6ff;
+  color: #1917a3;
 }
 
 #moreinfo {
@@ -47,7 +56,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #51d6ff;
+    color: #1917a3;
 }
 
 h1,
@@ -59,6 +68,7 @@ h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
+
 p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -66,12 +76,26 @@ p {
 }
 
 .bg-primary {
-    background-color: #a06b9a;
+    background-color: #469629;
 }
 
 .bg-dark {
     color: #fff;
     background-color: #222;
+}
+
+.bg-dark a{
+  color: #469629;
+}
+
+.bg-dark a:hover{
+  text-decoration: none;
+  color: rgba(70,150,41,.8);
+}
+
+/* Background parallax effet on header image */
+#bg-header-scroll{
+
 }
 
 .text-faded {
@@ -105,12 +129,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #a06b9a;
+    color: #9b1700;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #51d6ff;
+    color: #1917a3;
 }
 
 .navbar-default .nav > li>a,
@@ -123,12 +147,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #a06b9a;
+    color: #9b1700;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #a06b9a!important;
+    color: #9b1700!important;
     background-color: transparent;
 }
 
@@ -157,8 +181,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
-    background-position: center;
+    background-image: url(../img/misty-road.jpg);
+    background-position: center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -188,6 +212,10 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
+}
+
+header h1{
+  color: #9b1700;
 }
 
 /* SECTION STYLES */
@@ -225,7 +253,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(40,195,94,.8);
+    background: rgba(70,150,41,.8);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -264,7 +292,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #a06b9a;
+    color: #1917a3;
 }
 
 .no-gutter > [class*=col-] {
@@ -274,7 +302,7 @@ header .header-content .header-content-inner p {
 
 /* Team Section */
 #teams {
-  background-color: #a06b9a;
+  background-color: #9b1700;
   color: #fff;
 }
 
@@ -290,7 +318,7 @@ header .header-content .header-content-inner p {
 }
 
 #teams a {
-  color: #51d6ff;
+  color: #1917a3;
 }
 
 /* PROGRAMS SECTION */
@@ -324,6 +352,7 @@ header .header-content .header-content-inner p {
 /* CALENDAR STYLES */
 #calendar{
   background-color: #ccc;
+  margin: 0 0 30px;
 }
 
 /* BUTTON STYLES */
@@ -382,9 +411,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #a06b9a;
+    border-color: #9b1700;
     color: #fff;
-    background-color: #a06b9a;
+    background-color: #9b1700;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -425,12 +454,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #a06b9a;
-    background-color: #a06b9a;
+    border-color: #9b1700;
+    background-color: #9b1700;
 }
 
 .btn-primary .badge {
-    color: #a06b9a;
+    color: #9b1700;
     background-color: #fff;
 }
 
@@ -507,12 +536,12 @@ body {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #a06b9a;
+        color: #9b1700;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #51d6ff;
+        color: #1917a3;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -522,7 +551,7 @@ body {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #a06b9a;
+        color: #9b1700;
     }
 }
 

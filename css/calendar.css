@@ -548,4 +548,10 @@ height: 100%;
 
 }
 
+.calendar-header h2{
+	font-size: 3em;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	text-transform: capitalize;
+}
+
 /* Media Queries */

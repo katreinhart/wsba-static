@@ -184,11 +184,12 @@ header {
     min-height: auto;
     text-align: center;
     color: $white;
-    background: url('../img/misty-road.jpg') repeat fixed;
+    background: url('../img/straight-road.jpg') repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 
     .header-content {
         position: relative;
@@ -196,48 +197,41 @@ header {
         padding: 100px 15px;
         text-align: center;
 
-        .header-content-inner {
-            h1 {
-              margin-top: 0;
-              margin-bottom: 0;
-              text-transform: uppercase;
-              font-weight: 700;
-            }
 
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                margin-bottom: 50px;
-                font-size: 16px;
-                font-weight: 300;
-                color: rgba(255,255,255,.7);
-            }
+        h1 {
+          margin-top: 0;
+          margin-bottom: 0;
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 5em;
+          background-color: rgba(255, 255, 255, 0.3);
         }
+
+        hr {
+            margin: 30px auto;
+        }
+        p {
+            margin-bottom: 50px;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255,255,255,.9);
+        }
+        h1{
+          color: $red;
+        }
+        h3{
+          color: $white;
+        }
+
     }
 
-    h1{
-      color: $red;
-    }
 }
 
 
 /* SECTION STYLES */
 
-.section-heading {
-    margin-top: 0;
-}
-
-.service-box {
-    margin: 50px auto 0;
-    max-width: 400px;
-    p {
-        margin-bottom: 0;
-    }
-}
-
-
 /* PORTFOLIO */
+// Used for the Events and Programs sections
 
 .portfolio-box {
     display: block;
@@ -291,24 +285,11 @@ header {
 }
 
 
-/* miscategorized */
-.call-to-action h2 {
-    margin: 0 auto 20px;
-}
-
-.text-primary {
-    color: $blue;
-}
-
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
 }
 
-.program-list {
-  margin: 0;
-  padding: 10px;
-}
 
 /* Team Section */
 #teams {

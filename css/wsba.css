@@ -123,7 +123,7 @@ header {
   min-height: auto;
   text-align: center;
   color: #fff;
-  background: url("../img/misty-road.jpg") repeat fixed;
+  background: url("../img/straight-road.jpg") repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -133,31 +133,26 @@ header {
     width: 100%;
     padding: 100px 15px;
     text-align: center; }
-    header .header-content .header-content-inner h1 {
+    header .header-content h1 {
       margin-top: 0;
       margin-bottom: 0;
       text-transform: uppercase;
-      font-weight: 700; }
-    header .header-content .header-content-inner hr {
+      font-weight: 800;
+      font-size: 5em;
+      background-color: rgba(255, 255, 255, 0.3); }
+    header .header-content hr {
       margin: 30px auto; }
-    header .header-content .header-content-inner p {
+    header .header-content p {
       margin-bottom: 50px;
       font-size: 16px;
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.7); }
-  header h1 {
-    color: #9b1700; }
+      color: rgba(255, 255, 255, 0.9); }
+    header .header-content h1 {
+      color: #9b1700; }
+    header .header-content h3 {
+      color: #fff; }
 
 /* SECTION STYLES */
-.section-heading {
-  margin-top: 0; }
-
-.service-box {
-  margin: 50px auto 0;
-  max-width: 400px; }
-  .service-box p {
-    margin-bottom: 0; }
-
 /* PORTFOLIO */
 .portfolio-box {
   display: block;
@@ -196,20 +191,9 @@ header {
   .portfolio-box:hover .portfolio-box-caption {
     opacity: 1; }
 
-/* miscategorized */
-.call-to-action h2 {
-  margin: 0 auto 20px; }
-
-.text-primary {
-  color: #1917a3; }
-
 .no-gutter > [class*=col-] {
   padding-right: 0;
   padding-left: 0; }
-
-.program-list {
-  margin: 0;
-  padding: 10px; }
 
 /* Team Section */
 #teams {

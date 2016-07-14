@@ -62,7 +62,6 @@ p {
       text-decoration: none;
       color: rgba(70, 150, 41, 0.8); }
 
-/* Background parallax effect on header image */
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
 
@@ -107,6 +106,7 @@ aside {
   .navbar-default .nav > li.active > a:focus:hover {
     background-color: transparent; }
 
+/* Nav styles for fontawesome sprites on calendar page */
 /* HEADER STYLES */
 .container-heading {
   position: relative;
@@ -123,7 +123,7 @@ header {
   min-height: auto;
   text-align: center;
   color: #fff;
-  background: url("../img/straight-road.jpg") repeat fixed;
+  background: url("../img/straight-road.jpg") center repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -152,7 +152,6 @@ header {
     header .header-content h3 {
       color: #fff; }
 
-/* SECTION STYLES */
 /* PORTFOLIO */
 .portfolio-box {
   display: block;
@@ -363,41 +362,31 @@ body {
   .navbar-default {
     border-color: rgba(255, 255, 255, 0.3);
     background-color: transparent; }
-
-  .navbar-default .navbar-header .navbar-brand {
-    color: rgba(255, 255, 255, 0.7); }
-
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
-    color: #fff; }
-
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7); }
-
-  .navbar-default .nav > li > a:hover,
-  .navbar-default .nav > li > a:focus:hover {
-    color: #fff; }
-
-  .navbar-default.affix {
-    border-color: rgba(34, 34, 34, 0.05);
-    background-color: #fff; }
-
-  .navbar-default.affix .navbar-header .navbar-brand {
-    font-size: 14px;
-    color: #9b1700; }
-
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #1917a3; }
-
-  .navbar-default.affix .nav > li > a,
-  .navbar-default.affix .nav > li > a:focus {
-    color: #222; }
-
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
-    color: #9b1700; } }
+    .navbar-default .navbar-header .navbar-brand {
+      color: rgba(255, 255, 255, 0.7); }
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+      color: #fff; }
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus {
+      color: rgba(255, 255, 255, 0.7); }
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+      color: #fff; }
+    .navbar-default.affix {
+      border-color: rgba(34, 34, 34, 0.05);
+      background-color: #fff; }
+      .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #9b1700; }
+        .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand.focus {
+          color: #1917a3; }
+      .navbar-default.affix .nav > li > a,
+      .navbar-default.affix .nav > li > a:focus {
+        color: #222; }
+      .navbar-default.affix .nav > li > a:hover,
+      .navbar-default.affix .nav > li > a:focus:hover {
+        color: #9b1700; } }
 @media (min-width: 768px) {
   header {
     min-height: 100%; }
@@ -434,5 +423,15 @@ body {
 @media (max-width: 562px) {
   portfolio-box {
     opacity: 1; } }
+/* For FontAwesome size across screen sizes */
+@media screen and (max-width: 299px) {
+  .fa {
+    font-size: 1.4em; } }
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  .fa {
+    font-size: 2em; } }
+@media screen and (min-width: 800px) {
+  .fa {
+    font-size: 5em; } }
 
 /*# sourceMappingURL=wsba.css.map */

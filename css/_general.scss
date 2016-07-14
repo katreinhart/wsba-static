@@ -1,0 +1,94 @@
+/* GENERAL */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $font-main;
+}
+
+hr {
+    max-width: 50px;
+    border-color: $red;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: $white;
+}
+
+a {
+    color: $red;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+
+.bg-primary a {
+  color: $blue;
+}
+
+#moreinfo {
+  .btn-primary {
+    background-color: $mdgrey;
+  }
+
+}
+
+a:hover,
+a:focus {
+    color: $blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-head;
+}
+
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bg-primary {
+    background-color: $green;
+}
+
+.bg-dark {
+    color: $white;
+    background-color: $dkgrey;
+    a{
+      color: $green;
+      &:hover{
+        text-decoration: none;
+        color: $tlgreen;
+      }
+    }
+}
+
+
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}

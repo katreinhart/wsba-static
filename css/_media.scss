@@ -1,0 +1,121 @@
+
+/*   MEDIA QUERIES   */
+
+/* Desktop specific styles */
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,.3);
+        background-color: transparent;
+        .navbar-header .navbar-brand {
+            color: rgba(255,255,255,.7);
+        }
+        .navbar-header .navbar-brand:hover,
+        .navbar-header .navbar-brand:focus {
+            color: $white;
+        }
+        .nav > li>a,
+        .nav>li>a:focus {
+            color: rgba(255,255,255,.7);
+        }
+        .nav > li>a:hover,
+        .nav>li>a:focus:hover {
+            color: $white;
+        }
+        &.affix {
+            border-color: rgba(34,34,34,.05);
+            background-color: $white;
+            .navbar-header .navbar-brand {
+                font-size: 14px;
+                color: $red;
+                &:hover,
+                &.focus{
+                    color: $blue;
+                }
+            }
+            .nav > li>a,
+            .nav>li>a:focus {
+                color: $dkgrey;
+            }
+            .nav > li>a:hover,
+            .nav>li>a:focus:hover {
+                color: $red;
+            }
+        }
+
+
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* XL Screens */
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+/* Smaller screens (tablets, large phones) */
+@media(max-width: 562px) {
+  portfolio-box {
+    opacity: 1;
+  }
+
+}
+
+/* For FontAwesome size across screen sizes */
+
+@media screen and (max-width: 299px) {
+    .fa {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 799px) {
+    .fa {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .fa {
+        font-size: 5em;
+    }
+}

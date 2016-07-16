@@ -83,7 +83,7 @@
       <!-- /.container-fluid -->
   </nav>
 
-    <header>
+    <!-- <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>WSBA Racing</h1>
@@ -93,7 +93,7 @@
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
-    </header>
+    </header> -->
 
 <!-- Calendar Header section -->
 
@@ -220,18 +220,24 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <!-- fullcalendar.io JavaScript -->
     <script src="js/fullcalendar.js"></script>
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/gcal.js'></script>
+    <!-- <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/gcal.js'></script> -->
+    <script src="js/gcal.js"></script>
     <script src="js/calendar.js"></script>
 
 
     <script type='text/javascript'>
 
     $(document).ready(function(){
-
       $('#calendar').fullCalendar({
-        header: false
-      })
+         googleCalendarApiKey: 'AIzaSyDfXGKfDOOkUPi4A6Kkp_blfRHYUNw3nts',
+         events:
+         {
+             googleCalendarId: 'en.usa#holiday@group.v.calendar.google.com'
+         }
+      });
     });
 
     </script>

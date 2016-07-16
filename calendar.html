@@ -21,8 +21,8 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- <link rel="stylesheet" href="css/calendar.css" type="text/css"> -->
-    <link rel="stylesheet" href="/css/fullcalendar.css" type="text/css">
+    <link rel="stylesheet" href="css/calendar.css" type="text/css">
+    <link rel="stylesheet" href="css/fullcalendar.css" type="text/css">
 
     <!-- moved these to the head to see if it fixed display issue; nope -->
     <script src="js/jquery.min.js"></script>
@@ -230,10 +230,24 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
       $('#calendar').fullCalendar({
 
          googleCalendarApiKey: 'AIzaSyDfXGKfDOOkUPi4A6Kkp_blfRHYUNw3nts',
-         events:
+         eventSources:[
          {
-             googleCalendarId: 'en.usa#holiday@group.v.calendar.google.com'
+             googleCalendarId: 'en.usa#holiday@group.v.calendar.google.com',
+             className: 'holiday'
+         },{
+             googleCalendarId: 'g7cfpme5n3h77psrsk4vqtbj4k@group.calendar.google.com',
+             className: 'event-cx'
+         },{
+             googleCalendarId: '3vi9ehsvibkfb1m31o0mqjbgec@group.calendar.google.com',
+             className: 'event-track'
+         },{
+             googleCalendarId: 'sio3juast9s4segv90hnf5om6g@group.calendar.google.com',
+             className: 'event-road'
+         }, {
+             googleCalendarId: '9uug907sfhgcrcjg220qlod3dg@group.calendar.google.com',
+             className: 'event-mtb'
          }
+         ]
       });
     });
 

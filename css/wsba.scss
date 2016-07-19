@@ -15,6 +15,15 @@ $mdgrey: #666;
 $ltgrey: #ccc;
 $white: #fff;
 
+/* Custom colors for the calendar disciplines */
+$color-road: #AD2D2D;
+$color-track: #536CA6;
+$color-cx: #C7561E;
+$color-xco: #3C995B;
+$color-enduro: #A7B828;
+$color-dh: #9643A5;
+$color-other: #CF9911;
+
 $font-main: Merriweather,'Helvetica Neue',Arial,sans-serif;
 $font-head:  'Open Sans','Helvetica Neue',Arial,sans-serif;
 
@@ -24,7 +33,7 @@ $transition: all .35s;
 @import 'nav';
 @import 'headers';
 @import 'portfolio';
-
+@import 'calendar-styles';
 
 /* Team Section */
 #teams {

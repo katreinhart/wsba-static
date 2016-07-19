@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WSBA Racing - Washington State Bicycle Racing Association</title>
+    <title>Calendar - WSBA Racing - Washington State Bicycle Racing Association</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -23,12 +23,6 @@
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="css/calendar.css" type="text/css">
     <link rel="stylesheet" href="css/fullcalendar.css" type="text/css">
-
-    <!-- moved these to the head to see if it fixed display issue; nope -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/fullcalendar.js"></script>
-    <script src="js/gcal.js"></script>
 
 
     <!-- Custom CSS -->
@@ -113,11 +107,12 @@
       <ul class="nav nav-justified">
         <!-- eventually, these buttons will toggle the calendar view of each type of event -->
         <li><a class="text-center" id="btn-road" href="#"><i class="fa fa-road"></i> <br>Road</a></li>
-        <li><a class="text-center" id="btn-mtb" href="#"><i class="fa fa-gear"></i> <br>MTB</a></li>
+        <li><a class="text-center" id="btn-dh" href="#"><i class="fa fa-gear"></i> <br>Downhill</a></li>
         <li><a class="text-center" id="btn-track" href="#"><i class="fa fa-bell"></i> <br>Track</a></li>
         <li><a class="text-center" id="btn-cx" href="#"><i class="fa fa-beer"></i> <br>Cyclocross</a></li>
-        <li><a class="text-center" id="btn-clinics" href="#"><i class="fa fa-book"></i> <br>Clinics</a></li>
-        <li><a class="text-center" id="btn-fondo" href="#"><i class="fa fa-trophy"></i> <br>Fondos</a></li>
+        <li><a class="text-center" id="btn-xc" href="#"><i class="fa fa-tree"></i> <br>XC</a></li>
+        <li><a class="text-center" id="btn-enduro" href="#"><i class="fa fa-map-signs"></i> <br>Enduro</a></li>
+        <li><a class="text-center" id="btn-other" href="#"><i class="fa fa-trophy"></i> <br>Other</a></li>
       </ul>
     </div>
 
@@ -219,39 +214,102 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
 
+
+    <!-- moment.js is dependency for fullcalendar -->
+    <script src="js/moment.min.js"></script>
+    <!-- fullcalendar.js - see fullcalendar.io for documentation -->
+    <script src="js/fullcalendar.js"></script>
+    <!-- google calendar plugin for fullcalendar -->
+    <script src="js/gcal.js"></script>
+
+
+
     <script type='text/javascript'>
 
     $(document).ready(function(){
       $('#calendar').fullCalendar({
-
+        // FullCalendar initializeation function, pulls events from google calendar sources
          googleCalendarApiKey: 'AIzaSyDfXGKfDOOkUPi4A6Kkp_blfRHYUNw3nts',
+         // would be nice to figure out how to use variable names for colors here, but for now hex codes will do
          eventSources:[
          {
              googleCalendarId: 'en.usa#holiday@group.v.calendar.google.com',
              className: 'holiday',
-             color: '#666'
+             color: '#ccc'
          },{
              googleCalendarId: 'g7cfpme5n3h77psrsk4vqtbj4k@group.calendar.google.com',
-             className: 'event-cx'
+             className: 'event-cx',
+             color: '#C7561E'
          },{
              googleCalendarId: '3vi9ehsvibkfb1m31o0mqjbgec@group.calendar.google.com',
-             className: 'event-gravel'
+             className: 'event-other',
+             color: '#CF9911'
          },{
              googleCalendarId: 'sio3juast9s4segv90hnf5om6g@group.calendar.google.com',
-             className: 'event-road'
-
+             className: 'event-road',
+             color: '#AD2D2D'
          }, {
              googleCalendarId: '9uug907sfhgcrcjg220qlod3dg@group.calendar.google.com',
-             className: 'event-track'
+             className: 'event-track',
+             color: '#536CA6;'
+         }, {
+             googleCalendarId: 'ovnk6hqp5kq9bh02pub51uhu0c%40group.calendar.google.com',
+             className: 'event-dh',
+             color: '#9643A5'
+         }, {
+             googleCalendarId: 'nm65gk954gu676ujcbqf3hshe8%40group.calendar.google.com',
+             className: 'event-enduro',
+             color: '#A7B828'
+         }, {
+             googleCalendarId: 'naf2khsbbn3artfoekqldbtfpg%40group.calendar.google.com',
+             className: 'event-xco',
+             color: '#3C995B'
          }
+
        ],
       });
+
+// EVentually this should get DRYed out
+      $('#btn-road').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-road').toggle();
+      });
+      $('#btn-xco').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-xco').toggle();
+      });
+      $('#btn-cx').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-cx').toggle();
+      });
+      $('#btn-other').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-other').toggle();
+      });
+      $('#btn-track').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-track').toggle();
+      });
+      $('#btn-dh').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-dh').toggle();
+      });
+      $('#btn-enduro').click(function(){
+        // toggle calendar view for road calendar
+        $('.event-enduro').toggle();
+      });
+
     });
+
+
 
     </script>
 

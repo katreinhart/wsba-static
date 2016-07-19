@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 /* VARIABLES */
+/* Custom colors for the calendar disciplines */
 /* GENERAL */
 html,
 body {
@@ -193,6 +194,27 @@ header {
 .no-gutter > [class*=col-] {
   padding-right: 0;
   padding-left: 0; }
+
+#btn-road {
+  color: #AD2D2D; }
+
+#btn-dh {
+  color: #9643A5; }
+
+#btn-track {
+  color: #536CA6; }
+
+#btn-cx {
+  color: #C7561E; }
+
+#btn-xc {
+  color: #3C995B; }
+
+#btn-enduro {
+  color: #A7B828; }
+
+#btn-other {
+  color: #CF9911; }
 
 /* Team Section */
 #teams {

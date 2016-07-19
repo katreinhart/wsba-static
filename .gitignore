@@ -1,8 +1,9 @@
 /css/bootstrap.css
 /css/bootstrap.min.css
 /font-awesome
-/fonts
-/less
 /js/bootstrap.js
 /js/bootstrap.min.js
 /js/jq*
+/js/fullcalendar.js
+/js/moment.min.js
+/js/gcal.js

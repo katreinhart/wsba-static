@@ -159,20 +159,6 @@
       </div>
     </div>
 
-    <!-- modal -->
-      <div class="modal fade" id="myModal">
-    		<div class="modal-dialog">
-    			<div class="modal-content">
-    				<div class="modal-header">
-    					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    					<h4 class="modal-title" id="myModalLabel">Title</h4>
-    				</div><!-- modal-header -->
-    				<div class="modal-body">
-    					<p></p>
-    				</div><!-- modal-body -->
-    			</div><!-- modal-content -->
-    		</div><!-- modal-dialog -->
-    	</div><!-- modal -->
 
 
 <!-- Google Calendar embed code -->
@@ -206,14 +192,33 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
 
 
  <!-- CALL TO ACTION SECTION -->
-       <aside class="bg-dark">
-         <div class="container text-center">
-             <div class="call-to-action">
-                 <h2>Find out more about competitive cycling in the Northwest!</h2>
-                 <a href="#" class="btn btn-default btn-xl wow tada">More Info</a>
-             </div>
-         </div>
-     </aside>
+     <aside class="bg-dark">
+       <div class="container text-center">
+           <div class="call-to-action">
+               <h2>Find out more about competitive cycling in the Northwest!</h2>
+               <!-- <a href="#" class="btn btn-default btn-xl wow tada">More Info</a> -->
+               <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal" >Click ME!!!</button>
+           </div>
+       </div>
+   </aside>
+
+   <!-- modal -->
+     <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Event Modal Window</h4>
+          </div><!-- modal-header -->
+          <div class="modal-body">
+            <p>Some Content Goes Here.</p>
+            <p>
+              This will have event details: name, date, location, URL.
+            </p>
+          </div><!-- modal-body -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
     <!--
         Contact
@@ -267,11 +272,14 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
         </div><!-- end container-->
     </footer>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>

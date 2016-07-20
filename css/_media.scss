@@ -44,9 +44,7 @@
 
 
     }
-}
 
-@media(min-width:768px) {
     header {
         min-height: 100%;
     }
@@ -72,6 +70,14 @@
         max-width: 80%;
         font-size: 18px;
     }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
 }
 
 /* XL Screens */
@@ -82,21 +88,14 @@
 }
 
 
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
-}
 
 /* Smaller screens (tablets, large phones) */
 @media(max-width: 562px) {
   portfolio-box {
     opacity: 1;
   }
+
+  
 
 }
 

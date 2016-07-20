@@ -55,7 +55,7 @@ $(document).ready(function(){
   // This is snippit from stackoverflow http://stackoverflow.com/questions/29072645/fullcalendar-open-bootstrap-modal-on-dayclick
   // dayClick: function(date, jsEvent, view) {
   //   $("#myModal").modal("show");
-  //  Still need to code the modal window. 
+  // //  Still need to code the modal window. 
   // },
 
   });

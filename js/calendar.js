@@ -1,8 +1,7 @@
-
-
 $(document).ready(function(){
+
   $('#calendar').fullCalendar({
-    // FullCalendar initializeation function, pulls events from google calendar sources
+
      googleCalendarApiKey: 'AIzaSyDfXGKfDOOkUPi4A6Kkp_blfRHYUNw3nts',
      // would be nice to figure out how to use variable names for colors here, but for now hex codes will do
      eventSources:[
@@ -42,32 +41,29 @@ $(document).ready(function(){
 
    ],
 
-  // eventClick: function(event) {
-  //   // Open event url in new window
-  //   // Currently opens link to google calendar event page
-  //
-  //   // Goal: have this link open modal window with all info, provide link to event home page etc
-  //   if (event.url) {
-  //       window.open(event.url);
-  //       return false;
-  //   }
-  // },
-  // This is snippit from stackoverflow http://stackoverflow.com/questions/29072645/fullcalendar-open-bootstrap-modal-on-dayclick
+
   eventClick: function(event) {
 
     $("#myModalLabel").html(event.title);
 
+    if(!event.description){
+      $("#myModalBody").html('');
+      // Resets so that last data does not display in modal
+    }
+
     $("#myModalBody").html(event.description);
-    
+
     $("#myModal").modal("show");
     // open modal window
 
     return false; // do not open event url
-  },
+  }
 
-  });
+});
 
 // EVentually this should get DRYed out
+// Also would be nice to figure out how to get event display status to persist when view changes
+
   $('#btn-road').click(function(){
     // toggle calendar view for road calendar
     $('.event-road').toggle();

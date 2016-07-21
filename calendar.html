@@ -87,7 +87,7 @@
       <!-- /.container-fluid -->
   </nav>
 
-    <!-- <header>
+    <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>WSBA Racing</h1>
@@ -97,14 +97,14 @@
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
-    </header> -->
+    </header>
 
 <!-- Calendar Header section -->
-
+<!-- These two sections are currently redundant. Trying to figure out which one plays better -->
     <!-- <div class="container">
       <div class="row">
         <div class="calendar-header"><h2>Calendar</h2></div>
-          <ul class="nav nav-justified">
+          <ul class="nav nav-justified nav-inline">
             <li><a class="text-center" id="btn-road" href="#"><i class="fa fa-road"></i> <br>Road</a></li>
             <li><a class="text-center" id="btn-dh" href="#"><i class="fa fa-gear"></i> <br>Downhill</a></li>
             <li><a class="text-center" id="btn-track" href="#"><i class="fa fa-bell"></i> <br>Track</a></li>
@@ -116,34 +116,36 @@
         </div>
     </div> -->
 
-    <div class="container-fluid">
-      <div class="calendar-header row">
-        <h2>Calendar</h2>
+    <div class="container">
+      <div class="row">
+        <div class="calendar-header">
+          <h2 class="text-center">Calendar</h2>
+        </div>
       </div>
       <div class="row">
         <div class="col-xs-1 col-xs-offset-2">
-          <a class="text-center" id="btn-road" href="#"><i class="fa fa-road"></i> <br/>Road</a>
+          <a class="text-center" id="btn-road"><i class="fa fa-road"></i> <br/>Road</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-dh" href="#"><i class="fa fa-gear"></i> <br>Downhill</a>
+          <a class="text-center" id="btn-dh"><i class="fa fa-gear"></i> <br>Downhill</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-track" href="#"><i class="fa fa-bell"></i> <br>Track</a>
+          <a class="text-center" id="btn-track"><i class="fa fa-bell"></i> <br>Track</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-cx" href="#"><i class="fa fa-beer"></i> <br>Cyclocross</a>
+          <a class="text-center" id="btn-cx"><i class="fa fa-beer"></i> <br>Cyclocross</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-xco" href="#"><i class="fa fa-tree"></i> <br>XC</a>
+          <a class="text-center" id="btn-xco"><i class="fa fa-tree"></i> <br>XC</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-enduro" href="#"><i class="fa fa-map-signs"></i> <br>Enduro</a>
+          <a class="text-center" id="btn-enduro"><i class="fa fa-map-signs"></i> <br>Enduro</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-other" href="#"><i class="fa fa-trophy"></i> <br>Other</a>
+          <a class="text-center" id="btn-other"><i class="fa fa-trophy"></i> <br>Other</a>
         </div>
         <div class="col-xs-1">
-          <a class="text-center" id="btn-hol" href="#"><i class="fa fa-calendar"></i> <br>Holidays</a>
+          <a class="text-center" id="btn-hol"><i class="fa fa-calendar"></i> <br>Holidays</a>
         </div>
       </div>
     </div>
@@ -211,7 +213,8 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
             <h4 class="modal-title" id="myModalLabel">Event Modal Window</h4>
           </div><!-- modal-header -->
           <div class="modal-body" id="myModalBody">
-            
+
+
           </div><!-- modal-body -->
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
@@ -273,16 +276,14 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script> -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
-
 
     <!-- moment.js is dependency for fullcalendar -->
     <script src="js/moment.min.js"></script>
@@ -294,6 +295,9 @@ color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1
 
     <!-- custom js for rendering and controlling calendar -->
     <script src="js/calendar.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
 

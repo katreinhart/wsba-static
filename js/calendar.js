@@ -42,21 +42,27 @@ $(document).ready(function(){
 
    ],
 
-  eventClick: function(event) {
-    // Open event url in new window
-    // Currently opens link to google calendar event page
-
-    // Goal: have this link open modal window with all info, provide link to event home page etc
-    if (event.url) {
-        window.open(event.url);
-        return false;
-    }
-  },
+  // eventClick: function(event) {
+  //   // Open event url in new window
+  //   // Currently opens link to google calendar event page
+  //
+  //   // Goal: have this link open modal window with all info, provide link to event home page etc
+  //   if (event.url) {
+  //       window.open(event.url);
+  //       return false;
+  //   }
+  // },
   // This is snippit from stackoverflow http://stackoverflow.com/questions/29072645/fullcalendar-open-bootstrap-modal-on-dayclick
-  dayClick: function(date, jsEvent, view) {
-    // alert("Hello Freakin World!"); // this works ok
+  eventClick: function(event) {
+
+    $("#myModalLabel").html(event.title);
+
+    $("#myModalBody").html(event.description);
+    
     $("#myModal").modal("show");
-    // next task is to populate event data into modal window. 
+    // open modal window
+
+    return false; // do not open event url
   },
 
   });

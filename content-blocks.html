@@ -25,6 +25,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/wsba.css" type="text/css">
 
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,6 +40,7 @@
 <!--
     Navigation Bar
 -->
+<!-- This nav bar mirrors the content structure we agreed on for the Weebly site. May not be best org. for redesign. -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,25 +58,62 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#cal">Calendar</a>
+                        <a href="calendar.html">Calendar</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Results <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">2016 Results</a></li>
+                          <li><a href="#">BARR</a></li>
+                          <li><a href="#">BACX</a></li>
+                          <li><a href="#">Team Competition</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#programs">Programs</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Get Involved <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Resources</a></li>
+                          <li><a href="#">Join a Team</a></li>
+                          <li><a href="#">Equipment Rules &amp; Info</a></li>
+                          <li><a href="#">Mailing List</a></li>
+                          <li><a href="#">Volunteer Info</a></li>
+                          <li><a href="#">Spectator Info</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#results">Results</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">For Racers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Upgrade Info</a></li>
+                          <li><a href="#">Coaching</a></li>
+                          <li><a href="#">Teams</a></li>
+                          <li><a href="#">Meet the Team Rides</a></li>
+                          <li><a href="#">Women</a></li>
+                          <li><a href="#">Juniors</a></li>
+                          <li><a href="#">Grant Program</a></li>
+                          <li><a href="#">RaceClean Info</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#events">Events</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">For Promoters <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Promoter Handbook</a></li>
+                          <li><a href="#">Equipment Rental</a></li>
+                          <li><a href="#">New Event Subsidy Program</a></li>
+                          <li><a href="#">Equipment Rental Discount Program</a></li>
+                          <li><a href="#">Vehicle Guidelines</a></li>
+                          <li><a href="#">RaceClean Site Coordinator Handbook</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#teams">Teams</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">About WSBA <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Join WSBA</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">WSBA Info &amp; History</a></li>
+                          <li><a href="#">Financials</a></li>
+                          <li><a href="#">Minutes</a></li>
+                          <li><a href="#">Annual Meeting</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -81,6 +121,10 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+
+
+
 <!--
     Main Header
 -->
@@ -97,7 +141,118 @@
     </header>
 
 
+    <!-- TEAMS SECTION  -->
+  <section id="teams">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h3>Local Racing Teams</h3>
+          <p>
+            Find a team to ride with - whether you're novice or former pro, junior or masters, roadie, dirt rider, or anything in between.
+          </p>
+          <table class="table">
+            <tr>
+              <th class="col-sm-2">
+                Team Name
+              </th>
+              <th class="col-sm-8">
+                Disciplines
+              </th>
+              <th class="col-sm-2">
+                Contact
+              </th>
+            </tr>
+            <tr>
+              <td>
+                First Team
+              </td>
+              <td>
+                Masters, road and cyclocross, women
+              </td>
+              <td>
+                <a href="#">Person Person</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Second Team
+              </td>
+              <td>
+                Women, Juniors, primarily track, some road, mtb, cross
+              </td>
+              <td>
+                <a href="#">Another Person</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Third Team
+              </td>
+              <td>
+                Highly competitive road cyclists that dabble in other disciplines
+              </td>
+              <td>
+                <a href="#">Anony Mouse</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+<!-- Frequently Asked Questions section -->
+<!-- Use jQuery to make FAQ interactive ! -->
+
+  <section id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h3>Frequently Asked Questions</h3>
+          <div class="panel panel-group">
+
+          <div class="panel panel-default">
+            <div class="panel-heading" data-toggle="collapse" data-target="#demo1">
+              <h4>What’s bike racing all about?</h4>
+            </div>
+            <div id="demo1" class="collapse" class="panel-body">
+              <!-- need to give panel-body some padding -->
+              <p>
+                Bike racing unites the joy of riding a bike, the thrill of competition and pushing to be your best, the rewards of working together and sharing camaraderie with teammates, and combining fitness with skills and strategy. And there’s so much more.
+                “What’s racing all about” is different for every woman. We have the top-flight women who best the field again and again, while also taking time to help guide and support others. We have back-of-the-packers who know they’ll never achieve glory in the traditional sense, but feel their own glory in getting out there and pushing through, and sharing that experience with women who become some of their closest friends.
+                Some of us love the dirt, delighting in the unique (and often muddy) challenges of a cyclocross or mountain bike course. Some crave the speed and sun of the track. Some love the open road and the feel of the peloton. We share a willingness to work hard, and a strong desire to have fun at the same time.
+                We also work together for the sake of the team -- particularly in road and track races, individual racers might have specific roles to play within a race to help boost those with the likeliest chances of winning. You may also find yourself working with women from other teams for parts of a road or track race -- that is, riding in a rotating paceline to share the burden of the pull and the benefits of the draft so that all have a better chance of advancing in the field.
+                Many women who love their bikes but never thought of themselves as racers find great fulfillment once they’ve explored this world a little more.
+              </p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading" data-toggle="collapse" data-target="#demo">
+              <h4>What does being on a team involve?</h4>
+            </div>
+            <div id="demo" class="collapse" class="panel-body">
+              <!-- need to give panel-body some padding -->
+              <p>
+                Being on a racing team gives you a lot of benefits, and also carries some expectations of you.
+                As a team member, you’re one of a consistent group of cyclists who can train together, usually with similar goals and timelines, and that makes the workouts more efficient and more fun. You can learn a lot from more experienced racers -- everything from bike handling skills to how to pin on race numbers or use rollers.
+                Teams typically have at least one training ride per week during the fall and winter (and sometimes at other times of the year) and everyone needs to participate in many (not all) of those rides, as well as do additional training throughout the week. Teams may have clinics and workshops about topics such as hill climbing, nutrition and recovery and you’d be expected to attend as many of those as possible.
+                Of course, teams are all about racing. You’ll be expected to race a certain number of times each year; the number varies by team. Some teams have racers in all four disciplines (road, mountain, cyclocross, track); others focus on one or two.  Many teams engage in community involvement activities, and some sponsor races where you can either race or volunteer and learn more about the sport.
+
+              </p>
+            </div>
+          </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 <footer id="footer">
     <div class="container">

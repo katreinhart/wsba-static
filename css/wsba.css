@@ -124,7 +124,7 @@ header {
   min-height: auto;
   text-align: center;
   color: #fff;
-  background: url("../img/straight-road.jpg") center repeat fixed;
+  background: url("../img/misty-road.jpg") center repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -451,7 +451,7 @@ body {
 /* For FontAwesome size across screen sizes */
 @media screen and (max-width: 299px) {
   .fa {
-    font-size: 1.4em; } }
+    font-size: 0.8em; } }
 @media screen and (min-width: 300px) and (max-width: 799px) {
   .fa {
     font-size: 2em; } }

@@ -46,12 +46,16 @@ $(document).ready(function(){
 
     $("#myModalLabel").html(event.title);
 
-    if(!event.description){
-      $("#myModalBody").html('');
+    // reset modal and remove data from last time
+    $("#eventDesc").html('');
+    $("#eventDateTime").html('');
+    $("#eventLoc").html('');
       // Resets so that last data does not display in modal
-    }
 
-    $("#myModalBody").html(event.description);
+
+    $("#eventDateTime").html(event.start.format("dddd, MMMM Do YYYY"));
+    $("#eventDesc").html(event.description);
+    $("#eventLoc").html(event.location);
 
     $("#myModal").modal("show");
     // open modal window
@@ -67,6 +71,7 @@ $(document).ready(function(){
   $('#btn-road').click(function(){
     // toggle calendar view for road calendar
     $('.event-road').toggle();
+    
   });
   $('#btn-xco').click(function(){
     // toggle calendar view for road calendar

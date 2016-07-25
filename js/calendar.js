@@ -66,39 +66,30 @@ $(document).ready(function(){
 });
 
 // EVentually this should get DRYed out
-// Also would be nice to figure out how to get event display status to persist when view changes
+// Need to toggle button display to signify calendar display status
 
   $('#btn-road').click(function(){
-    // toggle calendar view for road calendar
     $('.event-road').toggle();
-    
   });
   $('#btn-xco').click(function(){
-    // toggle calendar view for road calendar
     $('.event-xco').toggle();
   });
   $('#btn-cx').click(function(){
-    // toggle calendar view for road calendar
     $('.event-cx').toggle();
   });
   $('#btn-other').click(function(){
-    // toggle calendar view for road calendar
     $('.event-other').toggle();
   });
   $('#btn-track').click(function(){
-    // toggle calendar view for road calendar
     $('.event-track').toggle();
   });
   $('#btn-dh').click(function(){
-    // toggle calendar view for road calendar
     $('.event-dh').toggle();
   });
   $('#btn-enduro').click(function(){
-    // toggle calendar view for road calendar
     $('.event-enduro').toggle();
   });
   $('#btn-hol').click(function(){
-    // toggle calendar view for road calendar
     $('.holiday').toggle();
   });
 

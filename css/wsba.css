@@ -109,15 +109,6 @@ aside {
 
 /* Nav styles for fontawesome sprites on calendar page */
 /* HEADER STYLES */
-.container-heading {
-  position: relative;
-  width: 100%;
-  padding: 100px 15px;
-  text-align: center; }
-  .container-heading h3 {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 3em; }
-
 header {
   position: relative;
   width: 100%;

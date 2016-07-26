@@ -14,3 +14,6 @@ Need to learn proper git practices of only editing a branch!
 
 ---
 Make calendar display icons indicate toggle status (grey out/opacity?)
+
+---
+Nav menu dropdown items do not work on small screens (click toggles menu display off)

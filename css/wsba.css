@@ -436,12 +436,18 @@ body {
   .service-box {
     margin: 20px auto 0; } }
 /* Smaller screens (tablets, large phones) */
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
   portfolio-box {
-    opacity: 1; } }
+    opacity: 1; }
+
+  .navbar-default ul li a {
+    font-size: 1em; } }
 /* For FontAwesome size across screen sizes */
 @media screen and (max-width: 299px) {
   .fa {
+    font-size: 0.8em; }
+
+  .navbar-default ul li a {
     font-size: 0.8em; } }
 @media screen and (min-width: 300px) and (max-width: 799px) {
   .fa {

@@ -89,9 +89,13 @@
 
 
 /* Smaller screens (tablets, large phones) */
-@media(max-width: 562px) {
+@media screen and (max-width: 562px) {
   portfolio-box {
     opacity: 1;
+  }
+
+  .navbar-default ul li a {
+    font-size: 1em;
   }
 }
 
@@ -100,6 +104,10 @@
 @media screen and (max-width: 299px) {
     .fa {
         font-size: 0.8em;
+    }
+
+    .navbar-default ul li a {
+      font-size: 0.8em;
     }
 }
 

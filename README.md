@@ -17,3 +17,7 @@ Make calendar display icons indicate toggle status (grey out/opacity?)
 
 ---
 Nav menu dropdown items do not work on small screens (click toggles menu display off)
+
+---
+Linting SCSS - error css/_calendar-styles.scss:1:1 [W] IdSelector: Avoid using id selectors
+Should I consider changing #btn-road etc to classes? probably.

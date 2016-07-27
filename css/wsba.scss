@@ -1,8 +1,8 @@
 /*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+* Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
 
 
 /* VARIABLES */
@@ -14,15 +14,16 @@ $dkgrey: #222;
 $mdgrey: #666;
 $ltgrey: #ccc;
 $white: #fff;
+$translucentgrey: rgba(255,255,255,.5);
 
 /* Custom colors for the calendar disciplines */
-$color-road: #AD2D2D;
-$color-track: #536CA6;
-$color-cx: #C7561E;
-$color-xco: #3C995B;
-$color-enduro: #A7B828;
-$color-dh: #9643A5;
-$color-other: #CF9911;
+$color-road: #ad2d2d;
+$color-track: #536ca6;
+$color-cx: #c7561e;
+$color-xco: #3c995b;
+$color-enduro: #a7b828;
+$color-dh: #9643a5;
+$color-other: #cf9911;
 
 $font-main: Merriweather,'Helvetica Neue',Arial,sans-serif;
 $font-head:  'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -39,15 +40,18 @@ $transition: all .35s;
 #teams {
   background-color: $red;
   color: $white;
+
   h3 {
-    text-align: center;
-    padding: 0 0 20px;
-    margin: 0;
     color: $white;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
   }
+
   p {
     color: $ltgrey;
   }
+
   a {
     color: $blue;
   }
@@ -57,45 +61,50 @@ $transition: all .35s;
 /* PROGRAMS SECTION */
 #programs {
   h2 {
-    padding: 0 0 20px;
-    font-size: 2em;
     color: $white;
+    font-size: 2em;
+    padding: 0 0 20px;
     text-align: center;
   }
+
   p {
     font-size: 1.1em;
   }
+
   ul {
     list-style: none;
+
     li {
       padding: 5px;
     }
   }
-  a:hover,a:active {
+
+  a:hover,
+  a:active {
     background-color: $ltgrey;
   }
 }
 
 /* CALENDAR STYLES */
-#calendar{
+#calendar {
   background-color: $white;
   margin: 0 0 30px;
 }
 
-@import "buttons";
+@import 'buttons';
 
 img::selection {
-    color: $white;
-    background: 0 0;
+  background: 0 0;
+  color: $white;
 }
 
 img::-moz-selection {
-    color: $white;
-    background: 0 0;
+  background: 0 0;
+  color: $white;
 }
 
 body {
-    webkit-tap-highlight-color: $dkgrey;
+  -webkit-tap-highlight-color: $dkgrey;
 }
 
 @import 'media';

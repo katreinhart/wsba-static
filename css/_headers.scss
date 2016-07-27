@@ -1,6 +1,4 @@
-
 /* HEADER STYLES */
-
 
 header {
   background: url('../img/ballard2.jpg') center repeat fixed;
@@ -8,25 +6,26 @@ header {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  color: $white;
+  color: $ltgrey;
   min-height: auto;
   position: relative;
   text-align: center;
   width: 100%;
 
   .header-content {
+    background-color: rgba(25, 25, 25, .4);
     padding: 100px 15px;
     position: relative;
     text-align: center;
     width: 100%;
 
     h1 {
-      background-color: rgba(255, 255, 255, .4);
       color: $red;
       font-size: 5em;
       font-weight: 800;
       margin-bottom: 0;
       margin-top: 0;
+      text-shadow: 2px 2px 4px $ltgrey;
       text-transform: uppercase;
     }
 
@@ -42,7 +41,7 @@ header {
     }
 
     h3 {
-      color: $white;
+      color: $ltgrey;
     }
   }
 }

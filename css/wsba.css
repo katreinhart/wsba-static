@@ -107,23 +107,24 @@ header {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  color: #fff;
+  color: #ccc;
   min-height: auto;
   position: relative;
   text-align: center;
   width: 100%; }
   header .header-content {
+    background-color: rgba(25, 25, 25, 0.4);
     padding: 100px 15px;
     position: relative;
     text-align: center;
     width: 100%; }
     header .header-content h1 {
-      background-color: rgba(255, 255, 255, 0.4);
       color: #9b1700;
       font-size: 5em;
       font-weight: 800;
       margin-bottom: 0;
       margin-top: 0;
+      text-shadow: 2px 2px 4px #ccc;
       text-transform: uppercase; }
     header .header-content hr {
       margin: 30px auto; }
@@ -133,7 +134,7 @@ header {
       font-weight: 300;
       margin-bottom: 50px; }
     header .header-content h3 {
-      color: #fff; }
+      color: #ccc; }
 
 /* PORTFOLIO */
 .portfolio-box {

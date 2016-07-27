@@ -1,0 +1,726 @@
+
+
+csslint: There are 145 problems in /Users/kat/Desktop/wsba/wsba-project-static/css/wsba.css.
+
+wsba.css
+1: warning at line 9, col 1
+Rule doesn't have all its properties in alphabetical order.
+html,
+
+wsba.css
+2: warning at line 17, col 1
+Rule doesn't have all its properties in alphabetical order.
+hr {
+
+wsba.css
+3: warning at line 22, col 1
+Element (hr.light) is overqualified, just use .light without element name.
+hr.light {
+
+wsba.css
+4: warning at line 27, col 3
+The property -o-transition is compatible with -webkit-transition and -moz-transition and should be included as well.
+  -webkit-transition: all 0.35s;
+
+wsba.css
+5: warning at line 34, col 1
+Don't use IDs in selectors.
+#moreinfo .btn-primary {
+
+wsba.css
+6: warning at line 49, col 1
+Rule doesn't have all its properties in alphabetical order.
+p {
+
+wsba.css
+7: warning at line 57, col 1
+Rule doesn't have all its properties in alphabetical order.
+.bg-dark {
+
+wsba.css
+8: warning at line 62, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .bg-dark a:hover {
+
+wsba.css
+9: warning at line 64, col 7
+Fallback color (hex or RGB) should precede RGBA color.
+      color: rgba(70, 150, 41, 0.8); }
+
+wsba.css
+10: warning at line 67, col 3
+Fallback color (hex or RGB) should precede RGBA color.
+  color: rgba(255, 255, 255, 0.7); }
+
+wsba.css
+11: warning at line 79, col 1
+Rule doesn't have all its properties in alphabetical order.
+.navbar-default {
+
+wsba.css
+12: warning at line 80, col 3
+Fallback border-color (hex or RGB) should precede RGBA border-color.
+  border-color: rgba(34, 34, 34, 0.05);
+
+wsba.css
+13: warning at line 83, col 3
+The property -o-transition is compatible with -webkit-transition and -moz-transition and should be included as well.
+  -webkit-transition: all 0.35s;
+
+wsba.css
+14: warning at line 86, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .navbar-default .navbar-header .navbar-brand {
+
+wsba.css
+15: warning at line 93, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .navbar-default .nav > li > a,
+
+wsba.css
+16: warning at line 102, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .navbar-default .nav > li.active > a,
+
+wsba.css
+17: warning at line 104, col 5
+Use of !important
+    color: #9b1700 !important;
+
+wsba.css
+18: warning at line 112, col 1
+Rule doesn't have all its properties in alphabetical order.
+header {
+
+wsba.css
+19: warning at line 115, col 3
+Expected (<length> | <percentage> | <content-sizing> | contain-floats | -moz-contain-floats | -webkit-contain-floats) but found 'auto'.
+  min-height: auto;
+
+wsba.css
+20: warning at line 123, col 3
+Rule doesn't have all its properties in alphabetical order.
+  header .header-content {
+
+wsba.css
+21: warning at line 126, col 5
+Using width with padding can sometimes make elements larger than you expect.
+    padding: 100px 15px;
+
+wsba.css
+22: warning at line 128, col 5
+Rule doesn't have all its properties in alphabetical order.
+    header .header-content h1 {
+
+wsba.css
+23: warning at line 128, col 28
+Heading (h1) has already been defined.
+    header .header-content h1 {
+
+wsba.css
+24: warning at line 128, col 28
+Heading (h1) should not be qualified.
+    header .header-content h1 {
+
+wsba.css
+25: warning at line 134, col 7
+Fallback background-color (hex or RGB) should precede RGBA background-color.
+      background-color: rgba(255, 255, 255, 0.3); }
+
+wsba.css
+26: warning at line 137, col 5
+Rule doesn't have all its properties in alphabetical order.
+    header .header-content p {
+
+wsba.css
+27: warning at line 141, col 7
+Fallback color (hex or RGB) should precede RGBA color.
+      color: rgba(255, 255, 255, 0.9); }
+
+wsba.css
+28: warning at line 142, col 28
+Heading (h1) has already been defined.
+    header .header-content h1 {
+
+wsba.css
+29: warning at line 142, col 28
+Heading (h1) should not be qualified.
+    header .header-content h1 {
+
+wsba.css
+30: warning at line 144, col 28
+Heading (h3) should not be qualified.
+    header .header-content h3 {
+
+wsba.css
+31: warning at line 144, col 28
+Heading (h3) has already been defined.
+    header .header-content h3 {
+
+wsba.css
+32: warning at line 148, col 1
+Rule doesn't have all its properties in alphabetical order.
+.portfolio-box {
+
+wsba.css
+33: warning at line 153, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .portfolio-box .portfolio-box-caption {
+
+wsba.css
+34: warning at line 162, col 5
+Fallback background (hex or RGB) should precede RGBA background.
+    background: rgba(70, 150, 41, 0.8);
+
+wsba.css
+35: warning at line 163, col 5
+The property -o-transition is compatible with -webkit-transition and -moz-transition and should be included as well.
+    -webkit-transition: all 0.35s;
+
+wsba.css
+36: warning at line 166, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+
+wsba.css
+37: warning at line 172, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .portfolio-box .portfolio-box-caption .project-category,
+
+wsba.css
+38: warning at line 176, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .portfolio-box .portfolio-box-caption .project-category {
+
+wsba.css
+39: warning at line 185, col 14
+Attribute selectors with *= are slow!
+.no-gutter > [class*=col-] {
+
+wsba.css
+40: warning at line 185, col 14
+Unqualified attribute selectors are known to be slow.
+.no-gutter > [class*=col-] {
+
+wsba.css
+41: warning at line 185, col 1
+Rule doesn't have all its properties in alphabetical order.
+.no-gutter > [class*=col-] {
+
+wsba.css
+42: warning at line 189, col 1
+Don't use IDs in selectors.
+#btn-road {
+
+wsba.css
+43: warning at line 192, col 1
+Don't use IDs in selectors.
+#btn-dh {
+
+wsba.css
+44: warning at line 195, col 1
+Don't use IDs in selectors.
+#btn-track {
+
+wsba.css
+45: warning at line 198, col 1
+Don't use IDs in selectors.
+#btn-cx {
+
+wsba.css
+46: warning at line 201, col 1
+Don't use IDs in selectors.
+#btn-xco {
+
+wsba.css
+47: warning at line 204, col 1
+Don't use IDs in selectors.
+#btn-enduro {
+
+wsba.css
+48: warning at line 207, col 1
+Don't use IDs in selectors.
+#btn-other {
+
+wsba.css
+49: warning at line 210, col 1
+Don't use IDs in selectors.
+#btn-hol {
+
+wsba.css
+50: warning at line 214, col 1
+Don't use IDs in selectors.
+#teams {
+
+wsba.css
+51: warning at line 217, col 3
+Don't use IDs in selectors.
+  #teams h3 {
+
+wsba.css
+52: warning at line 217, col 10
+Heading (h3) should not be qualified.
+  #teams h3 {
+
+wsba.css
+53: warning at line 217, col 3
+Rule doesn't have all its properties in alphabetical order.
+  #teams h3 {
+
+wsba.css
+54: warning at line 217, col 10
+Heading (h3) has already been defined.
+  #teams h3 {
+
+wsba.css
+55: warning at line 222, col 3
+Don't use IDs in selectors.
+  #teams p {
+
+wsba.css
+56: warning at line 224, col 3
+Don't use IDs in selectors.
+  #teams a {
+
+wsba.css
+57: warning at line 228, col 11
+Heading (h2) has already been defined.
+#programs h2 {
+
+wsba.css
+58: warning at line 228, col 1
+Rule doesn't have all its properties in alphabetical order.
+#programs h2 {
+
+wsba.css
+59: warning at line 228, col 1
+Don't use IDs in selectors.
+#programs h2 {
+
+wsba.css
+60: warning at line 228, col 11
+Heading (h2) should not be qualified.
+#programs h2 {
+
+wsba.css
+61: warning at line 233, col 1
+Don't use IDs in selectors.
+#programs p {
+
+wsba.css
+62: warning at line 235, col 1
+Don't use IDs in selectors.
+#programs ul {
+
+wsba.css
+63: warning at line 237, col 3
+Don't use IDs in selectors.
+  #programs ul li {
+
+wsba.css
+64: warning at line 239, col 1
+Don't use IDs in selectors.
+#programs a:hover, #programs a:active {
+
+wsba.css
+65: warning at line 239, col 20
+Don't use IDs in selectors.
+#programs a:hover, #programs a:active {
+
+wsba.css
+66: warning at line 243, col 1
+Don't use IDs in selectors.
+#calendar {
+
+wsba.css
+67: warning at line 248, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-default {
+
+wsba.css
+68: warning at line 252, col 3
+The property -o-transition is compatible with -webkit-transition and -moz-transition and should be included as well.
+  -webkit-transition: all 0.35s;
+
+wsba.css
+69: warning at line 256, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-default:hover,
+
+wsba.css
+70: warning at line 258, col 1
+Don't use adjoining classes.
+.btn-default.focus,
+
+wsba.css
+71: warning at line 260, col 1
+Don't use adjoining classes.
+.btn-default.active,
+
+wsba.css
+72: warning at line 261, col 9
+Don't use adjoining classes.
+.open > .dropdown-toggle.btn-default {
+
+wsba.css
+73: warning at line 267, col 1
+Don't use adjoining classes.
+.btn-default.active,
+
+wsba.css
+74: warning at line 268, col 9
+Don't use adjoining classes.
+.open > .dropdown-toggle.btn-default {
+
+wsba.css
+75: warning at line 271, col 1
+Don't use adjoining classes.
+.btn-default.disabled,
+
+wsba.css
+76: warning at line 271, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-default.disabled,
+
+wsba.css
+77: warning at line 274, col 1
+Don't use adjoining classes.
+.btn-default.disabled:hover,
+
+wsba.css
+78: warning at line 274, col 1
+Don't use adjoining classes.
+.btn-default.disabled:hover,
+
+wsba.css
+79: warning at line 277, col 1
+Don't use adjoining classes.
+.btn-default.disabled:focus,
+
+wsba.css
+80: warning at line 277, col 1
+Don't use adjoining classes.
+.btn-default.disabled:focus,
+
+wsba.css
+81: warning at line 280, col 1
+Don't use adjoining classes.
+.btn-default.disabled.focus,
+
+wsba.css
+82: warning at line 280, col 1
+Don't use adjoining classes.
+.btn-default.disabled.focus,
+
+wsba.css
+83: warning at line 281, col 1
+Don't use adjoining classes.
+.btn-default[disabled].focus,
+
+wsba.css
+84: warning at line 282, col 20
+Don't use adjoining classes.
+fieldset[disabled] .btn-default.focus,
+
+wsba.css
+85: warning at line 283, col 1
+Don't use adjoining classes.
+.btn-default.disabled:active,
+
+wsba.css
+86: warning at line 283, col 1
+Don't use adjoining classes.
+.btn-default.disabled:active,
+
+wsba.css
+87: warning at line 286, col 1
+Don't use adjoining classes.
+.btn-default.disabled.active,
+
+wsba.css
+88: warning at line 286, col 1
+Don't use adjoining classes.
+.btn-default.disabled.active,
+
+wsba.css
+89: warning at line 287, col 1
+Don't use adjoining classes.
+.btn-default[disabled].active,
+
+wsba.css
+90: warning at line 288, col 20
+Don't use adjoining classes.
+fieldset[disabled] .btn-default.active {
+
+wsba.css
+91: warning at line 292, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-default .badge {
+
+wsba.css
+92: warning at line 296, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-primary {
+
+wsba.css
+93: warning at line 300, col 3
+The property -o-transition is compatible with -webkit-transition and -moz-transition and should be included as well.
+  -webkit-transition: all 0.35s;
+
+wsba.css
+94: warning at line 304, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-primary:hover,
+
+wsba.css
+95: warning at line 306, col 1
+Don't use adjoining classes.
+.btn-primary.focus,
+
+wsba.css
+96: warning at line 308, col 1
+Don't use adjoining classes.
+.btn-primary.active,
+
+wsba.css
+97: warning at line 309, col 9
+Don't use adjoining classes.
+.open > .dropdown-toggle.btn-primary {
+
+wsba.css
+98: warning at line 315, col 1
+Don't use adjoining classes.
+.btn-primary.active,
+
+wsba.css
+99: warning at line 316, col 9
+Don't use adjoining classes.
+.open > .dropdown-toggle.btn-primary {
+
+wsba.css
+100: warning at line 319, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-primary.disabled,
+
+wsba.css
+101: warning at line 319, col 1
+Don't use adjoining classes.
+.btn-primary.disabled,
+
+wsba.css
+102: warning at line 322, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:hover,
+
+wsba.css
+103: warning at line 322, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:hover,
+
+wsba.css
+104: warning at line 325, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:focus,
+
+wsba.css
+105: warning at line 325, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:focus,
+
+wsba.css
+106: warning at line 328, col 1
+Don't use adjoining classes.
+.btn-primary.disabled.focus,
+
+wsba.css
+107: warning at line 328, col 1
+Don't use adjoining classes.
+.btn-primary.disabled.focus,
+
+wsba.css
+108: warning at line 329, col 1
+Don't use adjoining classes.
+.btn-primary[disabled].focus,
+
+wsba.css
+109: warning at line 330, col 20
+Don't use adjoining classes.
+fieldset[disabled] .btn-primary.focus,
+
+wsba.css
+110: warning at line 331, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:active,
+
+wsba.css
+111: warning at line 331, col 1
+Don't use adjoining classes.
+.btn-primary.disabled:active,
+
+wsba.css
+112: warning at line 334, col 1
+Don't use adjoining classes.
+.btn-primary.disabled.active,
+
+wsba.css
+113: warning at line 334, col 1
+Don't use adjoining classes.
+.btn-primary.disabled.active,
+
+wsba.css
+114: warning at line 335, col 1
+Don't use adjoining classes.
+.btn-primary[disabled].active,
+
+wsba.css
+115: warning at line 336, col 20
+Don't use adjoining classes.
+fieldset[disabled] .btn-primary.active {
+
+wsba.css
+116: warning at line 340, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-primary .badge {
+
+wsba.css
+117: warning at line 344, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn {
+
+wsba.css
+118: warning at line 354, col 1
+Rule doesn't have all its properties in alphabetical order.
+::-moz-selection {
+
+wsba.css
+119: warning at line 359, col 1
+Rule doesn't have all its properties in alphabetical order.
+::selection {
+
+wsba.css
+120: warning at line 364, col 1
+Rule doesn't have all its properties in alphabetical order.
+img::selection {
+
+wsba.css
+121: warning at line 368, col 1
+Rule doesn't have all its properties in alphabetical order.
+img::-moz-selection {
+
+wsba.css
+122: warning at line 373, col 3
+Unknown property 'webkit-tap-highlight-color'.
+  webkit-tap-highlight-color: #222; }
+
+wsba.css
+123: warning at line 378, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .navbar-default {
+
+wsba.css
+124: warning at line 379, col 5
+Fallback border-color (hex or RGB) should precede RGBA border-color.
+    border-color: rgba(255, 255, 255, 0.3);
+
+wsba.css
+125: warning at line 382, col 7
+Fallback color (hex or RGB) should precede RGBA color.
+      color: rgba(255, 255, 255, 0.7); }
+
+wsba.css
+126: warning at line 388, col 7
+Fallback color (hex or RGB) should precede RGBA color.
+      color: rgba(255, 255, 255, 0.7); }
+
+wsba.css
+127: warning at line 392, col 5
+Don't use adjoining classes.
+    .navbar-default.affix {
+
+wsba.css
+128: warning at line 392, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .navbar-default.affix {
+
+wsba.css
+129: warning at line 393, col 7
+Fallback border-color (hex or RGB) should precede RGBA border-color.
+      border-color: rgba(34, 34, 34, 0.05);
+
+wsba.css
+130: warning at line 395, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .navbar-default.affix .navbar-header .navbar-brand {
+
+wsba.css
+131: warning at line 395, col 7
+Don't use adjoining classes.
+      .navbar-default.affix .navbar-header .navbar-brand {
+
+wsba.css
+132: warning at line 398, col 67
+Don't use adjoining classes.
+        .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand.focus {
+
+wsba.css
+133: warning at line 398, col 104
+Don't use adjoining classes.
+        .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand.focus {
+
+wsba.css
+134: warning at line 398, col 9
+Don't use adjoining classes.
+        .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand.focus {
+
+wsba.css
+135: warning at line 400, col 7
+Don't use adjoining classes.
+      .navbar-default.affix .nav > li > a,
+
+wsba.css
+136: warning at line 401, col 7
+Don't use adjoining classes.
+      .navbar-default.affix .nav > li > a:focus {
+
+wsba.css
+137: warning at line 403, col 7
+Don't use adjoining classes.
+      .navbar-default.affix .nav > li > a:hover,
+
+wsba.css
+138: warning at line 404, col 7
+Don't use adjoining classes.
+      .navbar-default.affix .nav > li > a:focus:hover {
+
+wsba.css
+139: warning at line 410, col 3
+Rule doesn't have all its properties in alphabetical order.
+  header .header-content {
+
+wsba.css
+140: warning at line 414, col 5
+The property -moz-transform is compatible with -webkit-transform and -ms-transform and should be included as well.
+    -webkit-transform: translateY(-50%);
+
+wsba.css
+141: warning at line 414, col 5
+The property -o-transform is compatible with -webkit-transform and -ms-transform and should be included as well.
+    -webkit-transform: translateY(-50%);
+
+wsba.css
+142: warning at line 418, col 3
+Rule doesn't have all its properties in alphabetical order.
+  header .header-content .header-content-inner {
+
+wsba.css
+143: warning at line 423, col 3
+Rule doesn't have all its properties in alphabetical order.
+  header .header-content .header-content-inner p {
+
+wsba.css
+144: warning
+Too many font-size declarations (17), abstraction needed.
+
+wsba.css
+145: warning
+You have 3 h1s, 2 h2s, 3 h3s defined in this stylesheet.

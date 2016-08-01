@@ -1,19 +1,19 @@
 /* HEADER STYLES */
 
 header {
-  background: url('../img/ballard2.jpg') center repeat fixed;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background: url('../img/ballard2-2.jpg') no-repeat top fixed;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
   color: $ltgrey;
-  min-height: auto;
+  height: 70vh;
   position: relative;
   text-align: center;
   width: 100%;
 
   .header-content {
-    background-color: rgba(25, 25, 25, .4);
+    background-color: rgba(25, 25, 25, .6);
     padding: 100px 15px;
     position: relative;
     text-align: center;
@@ -29,19 +29,19 @@ header {
       text-transform: uppercase;
     }
 
-    hr {
-      margin: 30px auto;
+    h3 {
+      // color: $ltgrey;
     }
 
     p {
       color: rgba(255, 255, 255, .9);
       font-size: 16px;
       font-weight: 300;
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
 
-    h3 {
-      color: $ltgrey;
+    hr {
+      margin: 30px auto;
     }
   }
 }

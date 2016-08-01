@@ -1,11 +1,8 @@
 /*!
-* Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
-* Code licensed under the Apache License v2.0.
-* For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
 
 
-/* VARIABLES */
+// VARIABLES */
 $red: #9b1700;
 $blue: #1917a3;
 $green: #469629;
@@ -16,7 +13,7 @@ $ltgrey: #ccc;
 $white: #fff;
 $translucentgrey: rgba(255,255,255,.5);
 
-/* Custom colors for the calendar disciplines */
+// Custom colors for the calendar disciplines */
 $color-road: #ad2d2d;
 $color-track: #536ca6;
 $color-cx: #c7561e;
@@ -30,6 +27,7 @@ $font-head:  'Open Sans','Helvetica Neue',Arial,sans-serif;
 
 $transition: all .35s;
 
+@import 'reset';
 @import 'general';
 @import 'nav';
 @import 'headers';

@@ -22,8 +22,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -57,6 +55,9 @@ body {
 
 body {
   font-family: Merriweather, "Helvetica Neue", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 30px; }
 
 hr {
   border-color: #9b1700;
@@ -147,10 +148,10 @@ aside {
 /* HEADER STYLES */
 header {
   background: url("../img/ballard2-2.jpg") no-repeat top fixed;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -webkit-background-size: contain;
-  background-size: contain;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: #ccc;
   height: 70vh;
   position: relative;
@@ -158,6 +159,7 @@ header {
   width: 100%; }
   header .header-content {
     background-color: rgba(25, 25, 25, 0.6);
+    margin-top: 20px;
     padding: 100px 15px;
     position: relative;
     text-align: center;
@@ -168,7 +170,7 @@ header {
       font-weight: 800;
       margin-bottom: 0;
       margin-top: 0;
-      text-shadow: 2px 2px 4px #ccc;
+      text-shadow: 2px 2px 0.5px #ccc;
       text-transform: uppercase; }
     header .header-content p {
       color: rgba(255, 255, 255, 0.9);
@@ -415,7 +417,7 @@ body {
         color: #9b1700; }
 
   header .header-content {
-    padding: 0 50px;
+    padding: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);

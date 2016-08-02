@@ -16,7 +16,7 @@ header {
     background-color: rgba(25, 25, 25, .6);
     margin-top: 20px;
     padding: 100px 15px;
-    position: relative;
+    position: relative;;
     text-align: center;
     width: 100%;
 
@@ -31,14 +31,14 @@ header {
     }
 
     h3 {
-      // color: $ltgrey;
+      color: $ltgrey;
     }
 
     p {
       color: rgba(255, 255, 255, .9);
       font-size: 16px;
       font-weight: 300;
-      // margin-bottom: 50px;
+      margin-bottom: 50px;
     }
 
     hr {

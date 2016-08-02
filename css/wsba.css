@@ -1,11 +1,5 @@
 /*!
 */
-/* Eric Meyer's CSS Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   This is a Sass partial
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -160,7 +154,7 @@ header {
   header .header-content {
     background-color: rgba(25, 25, 25, 0.6);
     margin-top: 20px;
-    padding: 100px 15px;
+    padding: 100px 15px 0;
     position: relative;
     text-align: center;
     width: 100%; }
